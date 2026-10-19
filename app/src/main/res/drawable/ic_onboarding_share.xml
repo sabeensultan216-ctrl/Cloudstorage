@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding 2: Share — three people connected with lines -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#DCFCE7"
+        android:pathData="M120,120m-110,0a110,110 0,1 1,220 0a110,110 0,1 1,-220 0" />
+
+    <!-- Connection lines -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M80,130 L120,100" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M160,130 L120,100" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M80,130 L160,130" />
+
+    <!-- Center person (top) -->
+    <!-- Head -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M120,72 m-14,0 a14,14 0,1 1,28 0 a14,14 0,1 1,-28 0" />
+    <!-- Body -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M100,116 a20,20 0,0 1,40,0 Z" />
+
+    <!-- Left person -->
+    <!-- Head -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M70,112 m-13,0 a13,13 0,1 1,26 0 a13,13 0,1 1,-26 0" />
+    <!-- Body -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M52,152 a18,18 0,0 1,36,0 Z" />
+
+    <!-- Right person -->
+    <!-- Head -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M170,112 m-13,0 a13,13 0,1 1,26 0 a13,13 0,1 1,-26 0" />
+    <!-- Body -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M152,152 a18,18 0,0 1,36,0 Z" />
+
+    <!-- Share icon badge (center) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,100 m-12,0 a12,12 0,1 1,24 0 a12,12 0,1 1,-24 0" />
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M113,93 L127,100 L113,107 Z" />
+    <path
+        android:strokeColor="#2563EB"
+        android:strokeWidth="2.5"
+        android:pathData="M113,100 L108,100" />
+
+    <!-- Dotted sharing indicators -->
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M120,155 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M85,170 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M155,170 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+
+</vector>

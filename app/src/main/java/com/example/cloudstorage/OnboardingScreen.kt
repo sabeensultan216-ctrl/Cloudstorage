@@ -1,0 +1,309 @@
+package com.example.cloudstorage
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.cloudstorage.ui.theme.CloudStorageTheme
+import com.example.cloudstorage.ui.theme.NeutralWhite
+import kotlinx.coroutines.launch
+
+// ── Data model ────────────────────────────────────────────────────────────────
+
+data class OnboardingPageData(
+    val imageRes: Int,
+    val title: String,
+    val description: String
+)
+
+@Composable
+fun getOnboardingPages(): List<OnboardingPageData> = listOf(
+    OnboardingPageData(
+        imageRes = R.drawable.ic_onboarding_store_art,
+        title = stringResource(R.string.onboarding_title_1),
+        description = stringResource(R.string.onboarding_description_1)
+    ),
+    OnboardingPageData(
+        imageRes = R.drawable.ic_onboarding_share_art,
+        title = stringResource(R.string.onboarding_title_2),
+        description = stringResource(R.string.onboarding_description_2)
+    ),
+    OnboardingPageData(
+        imageRes = R.drawable.ic_onboarding_sync_art,
+        title = stringResource(R.string.onboarding_title_3),
+        description = stringResource(R.string.onboarding_description_3)
+    )
+)
+
+// ── Screen Composable ─────────────────────────────────────────────────────────
+
+@Composable
+fun OnboardingScreen(onGetStarted: () -> Unit) {
+    val onboardingPages = getOnboardingPages()
+    val pagerState = rememberPagerState(pageCount = { onboardingPages.size })
+    val scope = rememberCoroutineScope()
+
+    val primaryGradient = Brush.horizontalGradient(
+        listOf(Color(0xFF0084FF), Color(0xFF8B5CF6))
+    )
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(NeutralWhite)
+            .statusBarsPadding()
+            .navigationBarsPadding()
+    ) {
+        // Ambient soft background glows
+        Box(
+            modifier = Modifier
+                .size(280.dp)
+                .align(Alignment.TopStart)
+                .background(
+                    brush = Brush.radialGradient(
+                        colors = listOf(
+                            Color(0xFF38BDF8).copy(alpha = 0.22f),
+                            Color.Transparent
+                        )
+                    )
+                )
+        )
+        Box(
+            modifier = Modifier
+                .size(280.dp)
+                .align(Alignment.TopEnd)
+                .background(
+                    brush = Brush.radialGradient(
+                        colors = listOf(
+                            Color(0xFFA855F7).copy(alpha = 0.20f),
+                            Color.Transparent
+                        )
+                    )
+                )
+        )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // ── Horizontal Pager (Image + Title + Subtitle) ───────────────────
+            HorizontalPager(
+                state = pagerState,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f)
+            ) { pageIndex ->
+                val page = onboardingPages[pageIndex]
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(horizontal = 8.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    // Responsive Artwork with soft ambient blur background glow
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth(0.78f)
+                            .heightIn(min = 160.dp, max = 230.dp)
+                            .padding(vertical = 4.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        // Soft blurred radial glow aura directly behind the 3D illustration
+                        Box(
+                            modifier = Modifier
+                                .size(width = 230.dp, height = 180.dp)
+                                .align(Alignment.Center)
+                                .background(
+                                    brush = Brush.radialGradient(
+                                        colors = listOf(
+                                            Color(0xFF38BDF8).copy(alpha = 0.32f),
+                                            Color(0xFFA855F7).copy(alpha = 0.20f),
+                                            Color(0xFF818CF8).copy(alpha = 0.08f),
+                                            Color.Transparent
+                                        )
+                                    )
+                                )
+                        )
+
+                        // Top ambient soft aura
+                        Box(
+                            modifier = Modifier
+                                .size(130.dp)
+                                .align(Alignment.TopCenter)
+                                .background(
+                                    brush = Brush.radialGradient(
+                                        colors = listOf(
+                                            Color(0xFF60A5FA).copy(alpha = 0.22f),
+                                            Color.Transparent
+                                        )
+                                    )
+                                )
+                        )
+
+                        // Ambient soft lilac flare on bottom-right
+                        Box(
+                            modifier = Modifier
+                                .size(110.dp)
+                                .align(Alignment.BottomEnd)
+                                .background(
+                                    brush = Brush.radialGradient(
+                                        colors = listOf(
+                                            Color(0xFFA855F7).copy(alpha = 0.18f),
+                                            Color.Transparent
+                                        )
+                                    )
+                                )
+                        )
+
+                        // Artwork seamlessly floating inside the ambient glow
+                        Image(
+                            painter = painterResource(id = page.imageRes),
+                            contentDescription = page.title,
+                            modifier = Modifier.fillMaxSize(),
+                            contentScale = ContentScale.Fit
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = page.title,
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.ExtraBold,
+                        color = Color(0xFF0F172A),
+                        textAlign = TextAlign.Center
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Text(
+                        text = page.description,
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Normal,
+                        color = Color(0xFF64748B),
+                        textAlign = TextAlign.Center,
+                        lineHeight = 20.sp
+                    )
+                }
+            }
+
+            // ── Bottom section: Dots + Button ────────────────────────────────
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // 3 Dots Indicator
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                repeat(onboardingPages.size) { index ->
+                    val isSelected = index == pagerState.currentPage
+                    Box(
+                        modifier = Modifier
+                            .size(8.dp)
+                            .clip(CircleShape)
+                            .background(
+                                if (isSelected) Color(0xFF007AFF)
+                                else Color(0xFFCBD5E1)
+                            )
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Get Started Button
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 20.dp)
+                    .height(52.dp)
+                    .shadow(
+                        elevation = 6.dp,
+                        shape = RoundedCornerShape(26.dp),
+                        spotColor = Color(0xFF8B5CF6).copy(alpha = 0.35f)
+                    )
+                    .clip(RoundedCornerShape(26.dp))
+                    .background(primaryGradient)
+                    .clickable {
+                        if (pagerState.currentPage < onboardingPages.lastIndex) {
+                            scope.launch {
+                                pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                            }
+                        } else {
+                            onGetStarted()
+                        }
+                    },
+                contentAlignment = Alignment.Center
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = if (pagerState.currentPage < onboardingPages.lastIndex) stringResource(R.string.onboarding_next) else stringResource(R.string.onboarding_get_started),
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                        contentDescription = stringResource(R.string.onboarding_get_started),
+                        tint = Color.White,
+                        modifier = Modifier.size(18.dp)
+                    )
+                }
+            }
+        }
+    }
+}
+
+// ── Preview ───────────────────────────────────────────────────────────────────
+
+@Preview(showBackground = true, widthDp = 390, heightDp = 844)
+@Composable
+fun OnboardingScreenPreview() {
+    CloudStorageTheme {
+        OnboardingScreen(onGetStarted = {})
+    }
+}

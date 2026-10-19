@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding 1: Store — cloud with upload arrow -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#DBEAFE"
+        android:pathData="M120,120m-110,0a110,110 0,1 1,220 0a110,110 0,1 1,-220 0" />
+
+    <!-- Cloud body -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="
+        M155,130
+        a30,30 0,0 0,-28,-30
+        a25,25 0,0 0,-47,8
+        a22,22 0,0 0,4,43
+        Z" />
+
+    <!-- Cloud left bump -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M84,151 a22,22 0,0 1,0,-44 l0,44 Z" />
+
+    <!-- Upload arrow shaft -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M120,148 L120,108" />
+
+    <!-- Upload arrow head -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M107,121 L120,108 L133,121" />
+
+    <!-- Document stack shadow -->
+    <path
+        android:fillColor="#93C5FD"
+        android:pathData="M86,168 L90,160 L154,160 L158,168 Z" />
+
+    <!-- Document 1 (back) -->
+    <path
+        android:fillColor="#BFDBFE"
+        android:pathData="M92,160 L92,185 a3,3 0,0 0,3,3 L149,188 a3,3 0,0 0,3,-3 L152,160 Z" />
+
+    <!-- Document 2 (front) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M88,164 L88,188 a3,3 0,0 0,3,3 L153,191 a3,3 0,0 0,3,-3 L156,164 Z" />
+
+    <!-- Document lines -->
+    <path
+        android:strokeColor="#93C5FD"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M98,174 L146,174" />
+    <path
+        android:strokeColor="#93C5FD"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M98,182 L135,182" />
+
+</vector>

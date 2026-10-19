@@ -1,0 +1,235 @@
+﻿<resources>
+    <string name="app_name">CloudBox</string>
+    <string name="splash_tagline">æ‚¨çš„æ–‡ä»¶ï¼Œéšå¤„å¯ç”¨ã€‚</string>
+    
+    <string name="onboarding_title_1">å®‰å…¨å­˜å‚¨ä¸€åˆ‡</string>
+    <string name="onboarding_title_2">ä¸Žä»»ä½•äººåˆ†äº«</string>
+    <string name="onboarding_title_3">æ—¶åˆ»ä¿æŒåŒæ­¥</string>
+    <string name="onboarding_description_1">ä½¿ç”¨å†›å·¥çº§åŠ å¯†ä¿æŠ¤æ‚¨çš„æ‰€æœ‰ç…§ç‰‡ã€è§†é¢‘å’Œæ–‡æ¡£ã€‚</string>
+    <string name="onboarding_description_2">éšæ—¶éšåœ°è½»æ¾ä¸Žæœ‹å‹ã€å®¶äººå’ŒåŒäº‹åˆ†äº«æ–‡ä»¶ã€æ–‡ä»¶å¤¹å’Œé“¾æŽ¥ã€‚</string>
+    <string name="onboarding_description_3">é€šè¿‡å®žæ—¶åŒæ­¥ï¼Œåœ¨æ‰€æœ‰è®¾å¤‡ä¸Šæ— ç¼è®¿é—®æ‚¨çš„æ–‡ä»¶ã€‚</string>
+    <string name="onboarding_next">ä¸‹ä¸€æ­¥</string>
+    <string name="onboarding_get_started">ç«‹å³å¼€å§‹</string>
+    
+    <string name="sign_in">ç™»å½•</string>
+    <string name="continue_with_google">ä½¿ç”¨ Google ç»§ç»­</string>
+    <string name="or_continue_with_email">æˆ–ä½¿ç”¨ç”µå­é‚®ä»¶ç»§ç»­</string>
+    <string name="email">ç”µå­é‚®ä»¶</string>
+    <string name="password">å¯†ç </string>
+    <string name="forgot_password">å¿˜è®°å¯†ç ï¼Ÿ</string>
+    <string name="dont_have_account">è¿˜æ²¡æœ‰è´¦å·ï¼Ÿ</string>
+    <string name="create_account">åˆ›å»ºè´¦å·</string>
+    <string name="already_have_account">å·²æœ‰è´¦å·ï¼Ÿ</string>
+    <string name="terms_and_privacy">ç»§ç»­å³è¡¨ç¤ºæ‚¨åŒæ„æˆ‘ä»¬çš„æœåŠ¡æ¡æ¬¾å’Œéšç§æ”¿ç­–</string>
+    
+    <string name="choose_your_language">é€‰æ‹©æ‚¨çš„è¯­è¨€</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">EspaÃ±ol</string>
+    <string name="language_french">FranÃ§ais</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_chinese">ä¸­æ–‡</string>
+    <string name="language_arabic">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</string>
+    <string name="language_hindi">à¤¹à¤¿à¤¨à¥à¤¦à¥€</string>
+    <string name="language_urdu">Ø§Ø±Ø¯Ùˆ</string>
+    <string name="continue_btn">ç»§ç»­</string>
+    
+    <string name="always_in_sync">æ—¶åˆ»ä¿æŒåŒæ­¥</string>
+    <string name="sync_description">æ‚¨çš„æ–‡ä»¶ä¼šåœ¨æ‰€æœ‰è®¾å¤‡ä¹‹é—´è‡ªåŠ¨åŒæ­¥ï¼Œå†ä¹Ÿä¸ç”¨æ‹…å¿ƒä¸¢å¤±æ–‡ä»¶ã€‚</string>
+    <string name="sync_benefits_1">å®žæ—¶åŒæ­¥</string>
+    <string name="sync_benefits_2">è‡ªåŠ¨å¤‡ä»½</string>
+    <string name="sync_benefits_3">è·¨å¹³å°æ”¯æŒ</string>
+    <string name="sync_benefits_4">ç¦»çº¿è®¿é—®</string>
+    
+    <string name="nav_home">é¦–é¡µ</string>
+    <string name="nav_files">æ–‡ä»¶</string>
+    <string name="nav_shared">å…±äº«</string>
+    <string name="nav_profile">æˆ‘çš„</string>
+    
+    <string name="menu_my_files">æˆ‘çš„æ–‡ä»¶</string>
+    <string name="menu_upload">ä¸Šä¼ </string>
+    <string name="menu_shared">å…±äº«</string>
+    <string name="menu_auto_backup">è‡ªåŠ¨å¤‡ä»½</string>
+    <string name="menu_offline_files">ç¦»çº¿æ–‡ä»¶</string>
+    <string name="menu_go_premium">å‡çº§é«˜çº§ç‰ˆ</string>
+    <string name="menu_settings">è®¾ç½®</string>
+    <string name="menu_about">å…³äºŽ</string>
+    
+    <string name="home_good_morning">æ—©ä¸Šå¥½</string>
+    <string name="home_storage_used">å·²ç”¨å­˜å‚¨ç©ºé—´</string>
+    <string name="home_of">/</string>
+    <string name="home_upgrade">å‡çº§</string>
+    <string name="home_quick_actions">å¿«æ·æ“ä½œ</string>
+    <string name="home_recent_files">æœ€è¿‘æ–‡ä»¶</string>
+    <string name="home_see_all">æŸ¥çœ‹å…¨éƒ¨</string>
+    
+    <string name="quick_actions_title">å¿«æ·æ“ä½œ</string>
+    <string name="quick_action_upload_file">ä¸Šä¼ æ–‡ä»¶</string>
+    <string name="quick_action_upload_file_desc">ä¸Šä¼ ç…§ç‰‡ã€è§†é¢‘å’Œæ–‡æ¡£</string>
+    <string name="quick_action_upload_folder">ä¸Šä¼ æ–‡ä»¶å¤¹</string>
+    <string name="quick_action_upload_folder_desc">ä¸Šä¼ åŒ…å«æ–‡ä»¶çš„æ•´ä¸ªæ–‡ä»¶å¤¹</string>
+    <string name="quick_action_create_folder">æ–°å»ºæ–‡ä»¶å¤¹</string>
+    <string name="quick_action_create_folder_desc">åˆ›å»ºä¸€ä¸ªæ–°çš„ç©ºæ–‡ä»¶å¤¹</string>
+    <string name="quick_action_take_photo">æ‹ç…§</string>
+    <string name="quick_action_take_photo_desc">ä½¿ç”¨ç›¸æœºæ‹ç…§</string>
+    <string name="quick_action_scan_document">æ‰«ææ–‡æ¡£</string>
+    <string name="quick_action_scan_document_desc">ä½¿ç”¨ç›¸æœºæ‰«ææ–‡æ¡£</string>
+    <string name="quick_action_create_document">æ–°å»ºæ–‡æ¡£</string>
+    <string name="quick_action_create_document_desc">åˆ›å»ºæ–°çš„æ–‡æœ¬æ–‡æ¡£</string>
+    
+    <string name="my_files_title">æˆ‘çš„æ–‡ä»¶</string>
+    <string name="my_files_search">æœç´¢æ–‡ä»¶...</string>
+    <string name="my_files_all">å…¨éƒ¨</string>
+    <string name="my_files_photos">ç…§ç‰‡</string>
+    <string name="my_files_documents">æ–‡æ¡£</string>
+    <string name="my_files_videos">è§†é¢‘</string>
+    <string name="my_files_audio">éŸ³é¢‘</string>
+    <string name="my_files_recent">æœ€è¿‘</string>
+    <string name="my_files_starred">å·²åŠ æ˜Ÿæ ‡</string>
+    <string name="my_files_empty">æœªæ‰¾åˆ°æ–‡ä»¶</string>
+    <string name="my_files_empty_desc">ä¸Šä¼ æ‚¨çš„ç¬¬ä¸€ä¸ªæ–‡ä»¶å¼€å§‹ä½¿ç”¨</string>
+    
+    <string name="shared_files_title">å…±äº«æ–‡ä»¶</string>
+    <string name="shared_by_me">ç”±æˆ‘å…±äº«</string>
+    <string name="shared_with_me">ä¸Žæˆ‘å…±äº«</string>
+    <string name="shared_people">æ‹¥æœ‰è®¿é—®æƒé™çš„äºº</string>
+    <string name="shared_owner">æ‰€æœ‰è€…</string>
+    <string name="shared_editor">å¯ç¼–è¾‘</string>
+    <string name="shared_viewer">ä»…æŸ¥çœ‹</string>
+    <string name="shared_empty">æš‚æ— å…±äº«æ–‡ä»¶</string>
+    
+    <string name="upload_manager_title">ä¸Šä¼ ç®¡ç†</string>
+    <string name="upload_active">æ­£åœ¨ä¸Šä¼ </string>
+    <string name="upload_completed">å·²å®Œæˆ</string>
+    <string name="upload_failed">å¤±è´¥</string>
+    <string name="upload_uploading">æ­£åœ¨ä¸Šä¼ ...</string>
+    <string name="upload_paused">å·²æš‚åœ</string>
+    <string name="upload_completed_status">å·²å®Œæˆ</string>
+    <string name="upload_failed_status">å¤±è´¥</string>
+    <string name="upload_clear_all">æ¸…ç©ºå…¨éƒ¨</string>
+    <string name="upload_empty_active">æ²¡æœ‰æ­£åœ¨ä¸Šä¼ çš„ä»»åŠ¡</string>
+    <string name="upload_empty_completed">æ²¡æœ‰å·²å®Œæˆçš„ä¸Šä¼ </string>
+    <string name="upload_empty_failed">æ²¡æœ‰å¤±è´¥çš„ä¸Šä¼ </string>
+    
+    <string name="file_preview_info">ä¿¡æ¯</string>
+    <string name="file_preview_download">ä¸‹è½½</string>
+    <string name="file_preview_share">å…±äº«</string>
+    <string name="file_preview_delete">åˆ é™¤</string>
+    <string name="file_preview_favorite">æ”¶è—</string>
+    <string name="file_preview_size">å¤§å°</string>
+    <string name="file_preview_modified">ä¿®æ”¹æ—¶é—´</string>
+    <string name="file_preview_location">ä½ç½®</string>
+    
+    <string name="profile_title">ä¸ªäººä¸­å¿ƒ</string>
+    <string name="profile_my_cloud_storage">æˆ‘çš„äº‘å­˜å‚¨</string>
+    <string name="profile_account_settings">è´¦å·è®¾ç½®</string>
+    <string name="profile_recent">æœ€è¿‘</string>
+    <string name="profile_share">å…±äº«</string>
+    <string name="profile_offline">ç¦»çº¿</string>
+    <string name="profile_import">å¯¼å…¥</string>
+    <string name="profile_automatic_backup">è‡ªåŠ¨\nå¤‡ä»½</string>
+    <string name="profile_personal_vault">ä¸ªäºº\nä¿é™©åº“</string>
+    <string name="profile_recycling_bin">å›žæ”¶ç«™</string>
+    <string name="profile_webmaster">ç«™é•¿ä¸­å¿ƒ</string>
+    <string name="profile_notifications">é€šçŸ¥</string>
+    <string name="profile_security_privacy">å®‰å…¨ä¸Žéšç§</string>
+    <string name="profile_language">è¯­è¨€</string>
+    <string name="profile_help_support">å¸®åŠ©ä¸Žæ”¯æŒ</string>
+    <string name="profile_about_cloudbox">å…³äºŽ CloudBox</string>
+    <string name="profile_log_out">é€€å‡ºç™»å½•</string>
+    
+    <string name="premium_title">å‡çº§é«˜çº§ç‰ˆ</string>
+    <string name="premium_unlock_full_potential">è§£é”å…¨éƒ¨æ½œèƒ½</string>
+    <string name="premium_description">èŽ·å–æ›´å¤šå­˜å‚¨ç©ºé—´ã€é«˜çº§åŠŸèƒ½ä»¥åŠä¸“å±žå®¢æœæ”¯æŒ</string>
+    <string name="premium_monthly">æŒ‰æœˆ</string>
+    <string name="premium_yearly">æŒ‰å¹´</string>
+    <string name="premium_feature_1">1TB äº‘ç«¯å­˜å‚¨ç©ºé—´</string>
+    <string name="premium_feature_2">é«˜çº§æ–‡ä»¶å…±äº«</string>
+    <string name="premium_feature_3">ä¼˜å…ˆå®¢æœæ”¯æŒ</string>
+    <string name="premium_feature_4">é«˜çº§å®‰å…¨é˜²æŠ¤</string>
+    <string name="premium_feature_5">ç¦»çº¿åŒæ­¥åŠŸèƒ½</string>
+    <string name="premium_feature_6">åŽ†å²ç‰ˆæœ¬æŸ¥çœ‹</string>
+    <string name="premium_start_free_trial">å¼€å§‹å…è´¹è¯•ç”¨</string>
+    <string name="premium_subscribe">ç«‹å³è®¢é˜…</string>
+    
+    <string name="offline_downloads_title">ç¦»çº¿ä¸‹è½½</string>
+    <string name="offline_empty">æš‚æ— ç¦»çº¿æ–‡ä»¶</string>
+    <string name="offline_empty_desc">ä¸‹è½½æ–‡ä»¶ä»¥ä¾¿ç¦»çº¿æ—¶è®¿é—®</string>
+    <string name="offline_downloaded">å·²ä¸‹è½½</string>
+    <string name="offline_available_offline">æ”¯æŒç¦»çº¿è®¿é—®</string>
+    
+    <string name="auto_backup_title">è‡ªåŠ¨å¤‡ä»½</string>
+    <string name="auto_backup_photos">ç…§ç‰‡</string>
+    <string name="auto_backup_videos">è§†é¢‘</string>
+    <string name="auto_backup_documents">æ–‡æ¡£</string>
+    <string name="auto_backup_enabled">å·²å¼€å¯</string>
+    <string name="auto_backup_disabled">å·²å…³é—­</string>
+    <string name="auto_backup_last_backup">ä¸Šæ¬¡å¤‡ä»½</string>
+    <string name="auto_backup_never">ä»Žæœª</string>
+    
+    <string name="help_support_title">å¸®åŠ©ä¸Žæ”¯æŒ</string>
+    <string name="help_search_hint">æœç´¢å¸®åŠ©ã€ä¸»é¢˜ã€å¸¸è§é—®é¢˜...</string>
+    <string name="help_faq_title">å¸¸è§é—®é¢˜</string>
+    <string name="help_contact_us">ä»éœ€å¸®åŠ©ï¼Ÿè”ç³»æˆ‘ä»¬</string>
+    <string name="help_live_chat">åœ¨çº¿å®¢æœ</string>
+    <string name="help_live_chat_desc">ä¸Žæˆ‘ä»¬çš„æ”¯æŒå›¢é˜Ÿå³æ—¶æ²Ÿé€š</string>
+    <string name="help_email_support">é‚®ä»¶æ”¯æŒ</string>
+    <string name="help_email_support_desc">24å°æ—¶å†…èŽ·å¾—ç­”å¤</string>
+    
+    <string name="security_policy_title">å®‰å…¨ä¸Žéšç§</string>
+    <string name="security_policy_subtitle">æ‚¨çš„éšç§ä¸Žå®‰å…¨æ˜¯æˆ‘ä»¬çš„é‡ä¸­ä¹‹é‡ã€‚äº†è§£æˆ‘ä»¬å¦‚ä½•å®ˆæŠ¤æ‚¨çš„æ•°æ®ã€‚</string>
+    
+    <string name="about_title">å…³äºŽ</string>
+    <string name="about_version">ç‰ˆæœ¬ 2.4.0 (æž„å»º 2401)</string>
+    <string name="about_tagline">å¿«é€Ÿã€å®‰å…¨ã€æµç•…çš„äº‘å­˜å‚¨ï¼Œå®ˆæŠ¤æ‚¨çš„æ‰€æœ‰æ–‡ä»¶ã€ç…§ç‰‡å’Œçè´µå›žå¿†ã€‚</string>
+    <string name="about_key_features">ä¸»è¦ç‰¹æ€§</string>
+    <string name="about_contact_us">è”ç³»æˆ‘ä»¬</string>
+    <string name="about_website">å®˜æ–¹ç½‘ç«™</string>
+    <string name="about_support_email">å®¢æœé‚®ç®±</string>
+    <string name="about_legal">æ³•å¾‹æ¡æ¬¾</string>
+    <string name="about_terms_service">æœåŠ¡æ¡æ¬¾</string>
+    <string name="about_privacy_policy">éšç§æ”¿ç­–</string>
+    
+    <string name="file_rename">é‡å‘½å</string>
+    <string name="file_move">ç§»åŠ¨</string>
+    <string name="file_copy">å¤åˆ¶</string>
+    <string name="file_delete">åˆ é™¤</string>
+    <string name="file_properties">å±žæ€§</string>
+    <string name="file_make_offline">è®¾ä¸ºç¦»çº¿å¯ç”¨</string>
+    <string name="file_remove_offline">ç§»å‡ºç¦»çº¿</string>
+    
+    <string name="storage_space_management">ç©ºé—´ç®¡ç†</string>
+    <string name="storage_clean_up">æ¸…ç†</string>
+    <string name="storage_permanent">æ°¸ä¹…</string>
+    <string name="storage_time_limited">é™æ—¶</string>
+    <string name="storage_gb">GB</string>
+    <string name="storage_mb">MB</string>
+    <string name="storage_kb">KB</string>
+    <string name="storage_bytes">å­—èŠ‚</string>
+    
+    <string name="ok">ç¡®å®š</string>
+    <string name="cancel">å–æ¶ˆ</string>
+    <string name="save">ä¿å­˜</string>
+    <string name="delete">åˆ é™¤</string>
+    <string name="edit">ç¼–è¾‘</string>
+    <string name="done">å®Œæˆ</string>
+    <string name="close">å…³é—­</string>
+    <string name="back">è¿”å›ž</string>
+    <string name="next">ä¸‹ä¸€æ­¥</string>
+    <string name="previous">ä¸Šä¸€æ­¥</string>
+    <string name="loading">æ­£åœ¨åŠ è½½...</string>
+    <string name="error">é”™è¯¯</string>
+    <string name="retry">é‡è¯•</string>
+    <string name="search">æœç´¢</string>
+    <string name="menu">èœå•</string>
+    
+    <string name="cd_menu">èœå•</string>
+    <string name="cd_search">æœç´¢</string>
+    <string name="cd_notifications">é€šçŸ¥</string>
+    <string name="cd_back">è¿”å›ž</string>
+    <string name="cd_close">å…³é—­</string>
+    <string name="cd_upload">ä¸Šä¼ </string>
+    <string name="cd_download">ä¸‹è½½</string>
+    <string name="cd_share">å…±äº«</string>
+    <string name="cd_delete">åˆ é™¤</string>
+    <string name="cd_more_options">æ›´å¤šé€‰é¡¹</string>
+</resources>

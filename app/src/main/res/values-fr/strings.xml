@@ -1,0 +1,235 @@
+﻿<resources>
+    <string name="app_name">CloudBox</string>
+    <string name="splash_tagline">Vos fichiers, partout avec vous.</string>
+    
+    <string name="onboarding_title_1">Stockez tout en sÃ©curitÃ©</string>
+    <string name="onboarding_title_2">Partagez avec n\'importe qui</string>
+    <string name="onboarding_title_3">Toujours synchronisÃ©</string>
+    <string name="onboarding_description_1">ProtÃ©gez toutes vos photos, vidÃ©os et documents avec un chiffrement de qualitÃ© militaire.</string>
+    <string name="onboarding_description_2">Partagez facilement des fichiers, dossiers et liens avec vos proches et collÃ¨gues Ã  tout moment.</string>
+    <string name="onboarding_description_3">AccÃ©dez Ã  vos fichiers en toute fluiditÃ© sur tous vos appareils grÃ¢ce Ã  la synchronisation en temps rÃ©el.</string>
+    <string name="onboarding_next">Suivant</string>
+    <string name="onboarding_get_started">Commencer</string>
+    
+    <string name="sign_in">Se connecter</string>
+    <string name="continue_with_google">Continuer avec Google</string>
+    <string name="or_continue_with_email">Ou continuer avec un e-mail</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oubliÃ© ?</string>
+    <string name="dont_have_account">Pas encore de compte ?</string>
+    <string name="create_account">CrÃ©er un compte</string>
+    <string name="already_have_account">Vous avez dÃ©jÃ  un compte ?</string>
+    <string name="terms_and_privacy">En continuant, vous acceptez nos Conditions d\'utilisation et notre Politique de confidentialitÃ©</string>
+    
+    <string name="choose_your_language">Choisissez votre langue</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">EspaÃ±ol</string>
+    <string name="language_french">FranÃ§ais</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_chinese">ä¸­æ–‡</string>
+    <string name="language_arabic">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</string>
+    <string name="language_hindi">à¤¹à¤¿à¤¨à¥à¤¦à¥€</string>
+    <string name="language_urdu">Ø§Ø±Ø¯Ùˆ</string>
+    <string name="continue_btn">Continuer</string>
+    
+    <string name="always_in_sync">Toujours synchronisÃ©</string>
+    <string name="sync_description">Vos fichiers sont synchronisÃ©s automatiquement sur tous vos appareils. Ne perdez plus jamais un fichier.</string>
+    <string name="sync_benefits_1">Synchronisation en temps rÃ©el</string>
+    <string name="sync_benefits_2">Sauvegarde automatique</string>
+    <string name="sync_benefits_3">Support multiplateforme</string>
+    <string name="sync_benefits_4">AccÃ¨s hors ligne</string>
+    
+    <string name="nav_home">Accueil</string>
+    <string name="nav_files">Fichiers</string>
+    <string name="nav_shared">PartagÃ©s</string>
+    <string name="nav_profile">Profil</string>
+    
+    <string name="menu_my_files">Mes fichiers</string>
+    <string name="menu_upload">TÃ©lÃ©verser</string>
+    <string name="menu_shared">PartagÃ©s</string>
+    <string name="menu_auto_backup">Sauvegarde auto</string>
+    <string name="menu_offline_files">Fichiers hors ligne</string>
+    <string name="menu_go_premium">Passer Ã  Premium</string>
+    <string name="menu_settings">ParamÃ¨tres</string>
+    <string name="menu_about">Ã€ propos</string>
+    
+    <string name="home_good_morning">Bonjour</string>
+    <string name="home_storage_used">Stockage utilisÃ©</string>
+    <string name="home_of">sur</string>
+    <string name="home_upgrade">AmÃ©liorer</string>
+    <string name="home_quick_actions">Actions rapides</string>
+    <string name="home_recent_files">Fichiers rÃ©cents</string>
+    <string name="home_see_all">Voir tout</string>
+    
+    <string name="quick_actions_title">Actions rapides</string>
+    <string name="quick_action_upload_file">TÃ©lÃ©verser un fichier</string>
+    <string name="quick_action_upload_file_desc">TÃ©lÃ©versez photos, vidÃ©os et documents</string>
+    <string name="quick_action_upload_folder">TÃ©lÃ©verser un dossier</string>
+    <string name="quick_action_upload_folder_desc">TÃ©lÃ©versez un dossier entier avec ses fichiers</string>
+    <string name="quick_action_create_folder">CrÃ©er un dossier</string>
+    <string name="quick_action_create_folder_desc">CrÃ©er un nouveau dossier vide</string>
+    <string name="quick_action_take_photo">Prendre une photo</string>
+    <string name="quick_action_take_photo_desc">Prendre une photo avec l\'appareil</string>
+    <string name="quick_action_scan_document">NumÃ©riser un document</string>
+    <string name="quick_action_scan_document_desc">NumÃ©riser Ã  l\'aide de l\'appareil photo</string>
+    <string name="quick_action_create_document">CrÃ©er un document</string>
+    <string name="quick_action_create_document_desc">CrÃ©er un nouveau document texte</string>
+    
+    <string name="my_files_title">Mes fichiers</string>
+    <string name="my_files_search">Rechercher des fichiers...</string>
+    <string name="my_files_all">Tous</string>
+    <string name="my_files_photos">Photos</string>
+    <string name="my_files_documents">Documents</string>
+    <string name="my_files_videos">VidÃ©os</string>
+    <string name="my_files_audio">Audio</string>
+    <string name="my_files_recent">RÃ©cents</string>
+    <string name="my_files_starred">Favoris</string>
+    <string name="my_files_empty">Aucun fichier trouvÃ©</string>
+    <string name="my_files_empty_desc">Commencez par tÃ©lÃ©verser votre premier fichier</string>
+    
+    <string name="shared_files_title">Fichiers partagÃ©s</string>
+    <string name="shared_by_me">PartagÃ©s par moi</string>
+    <string name="shared_with_me">PartagÃ©s avec moi</string>
+    <string name="shared_people">Personnes ayant accÃ¨s</string>
+    <string name="shared_owner">PropriÃ©taire</string>
+    <string name="shared_editor">Ã‰diteur</string>
+    <string name="shared_viewer">Lecteur</string>
+    <string name="shared_empty">Aucun fichier partagÃ© pour l\'instant</string>
+    
+    <string name="upload_manager_title">Gestionnaire de tÃ©lÃ©versement</string>
+    <string name="upload_active">En cours</string>
+    <string name="upload_completed">TerminÃ©s</string>
+    <string name="upload_failed">Ã‰chouÃ©s</string>
+    <string name="upload_uploading">TÃ©lÃ©versement...</string>
+    <string name="upload_paused">En pause</string>
+    <string name="upload_completed_status">TerminÃ©</string>
+    <string name="upload_failed_status">Ã‰chouÃ©</string>
+    <string name="upload_clear_all">Tout effacer</string>
+    <string name="upload_empty_active">Aucun tÃ©lÃ©versement actif</string>
+    <string name="upload_empty_completed">Aucun tÃ©lÃ©versement terminÃ©</string>
+    <string name="upload_empty_failed">Aucun tÃ©lÃ©versement Ã©chouÃ©</string>
+    
+    <string name="file_preview_info">Infos</string>
+    <string name="file_preview_download">TÃ©lÃ©charger</string>
+    <string name="file_preview_share">Partager</string>
+    <string name="file_preview_delete">Supprimer</string>
+    <string name="file_preview_favorite">Favori</string>
+    <string name="file_preview_size">Taille</string>
+    <string name="file_preview_modified">ModifiÃ©</string>
+    <string name="file_preview_location">Emplacement</string>
+    
+    <string name="profile_title">Profil</string>
+    <string name="profile_my_cloud_storage">Mon stockage Cloud</string>
+    <string name="profile_account_settings">ParamÃ¨tres du compte</string>
+    <string name="profile_recent">RÃ©cents</string>
+    <string name="profile_share">Partager</string>
+    <string name="profile_offline">Hors ligne</string>
+    <string name="profile_import">Importer</string>
+    <string name="profile_automatic_backup">Sauvegarde\nautomatique</string>
+    <string name="profile_personal_vault">Coffre-fort\npersonnel</string>
+    <string name="profile_recycling_bin">Corbeille</string>
+    <string name="profile_webmaster">Webmestre</string>
+    <string name="profile_notifications">Notifications</string>
+    <string name="profile_security_privacy">SÃ©curitÃ© et confidentialitÃ©</string>
+    <string name="profile_language">Langue</string>
+    <string name="profile_help_support">Aide et support</string>
+    <string name="profile_about_cloudbox">Ã€ propos de CloudBox</string>
+    <string name="profile_log_out">Se dÃ©connecter</string>
+    
+    <string name="premium_title">Passer Ã  Premium</string>
+    <string name="premium_unlock_full_potential">LibÃ©rez tout le potentiel</string>
+    <string name="premium_description">BÃ©nÃ©ficiez de plus d\'espace, de fonctionnalitÃ©s avancÃ©es et d\'un support prioritaire</string>
+    <string name="premium_monthly">Mensuel</string>
+    <string name="premium_yearly">Annuel</string>
+    <string name="premium_feature_1">1 To de stockage cloud</string>
+    <string name="premium_feature_2">Partage avancÃ© de fichiers</string>
+    <string name="premium_feature_3">Assistance client prioritaire</string>
+    <string name="premium_feature_4">SÃ©curitÃ© renforcÃ©e</string>
+    <string name="premium_feature_5">Synchronisation hors ligne</string>
+    <string name="premium_feature_6">Historique des versions</string>
+    <string name="premium_start_free_trial">DÃ©marrer l\'essai gratuit</string>
+    <string name="premium_subscribe">S\'abonner</string>
+    
+    <string name="offline_downloads_title">TÃ©lÃ©chargements hors ligne</string>
+    <string name="offline_empty">Aucun fichier hors ligne</string>
+    <string name="offline_empty_desc">TÃ©lÃ©chargez des fichiers pour y accÃ©der sans connexion</string>
+    <string name="offline_downloaded">TÃ©lÃ©chargÃ©</string>
+    <string name="offline_available_offline">Disponible hors ligne</string>
+    
+    <string name="auto_backup_title">Sauvegarde automatique</string>
+    <string name="auto_backup_photos">Photos</string>
+    <string name="auto_backup_videos">VidÃ©os</string>
+    <string name="auto_backup_documents">Documents</string>
+    <string name="auto_backup_enabled">ActivÃ©</string>
+    <string name="auto_backup_disabled">DÃ©sactivÃ©</string>
+    <string name="auto_backup_last_backup">DerniÃ¨re sauvegarde</string>
+    <string name="auto_backup_never">Jamais</string>
+    
+    <string name="help_support_title">Aide et support</string>
+    <string name="help_search_hint">Rechercher de l\'aide, sujets, questions...</string>
+    <string name="help_faq_title">Foire aux questions</string>
+    <string name="help_contact_us">Besoin d\'aide ? Contactez-nous</string>
+    <string name="help_live_chat">Chat en direct</string>
+    <string name="help_live_chat_desc">Discutez avec notre Ã©quipe de support</string>
+    <string name="help_email_support">Support par e-mail</string>
+    <string name="help_email_support_desc">Obtenez une rÃ©ponse sous 24 heures</string>
+    
+    <string name="security_policy_title">SÃ©curitÃ© et confidentialitÃ©</string>
+    <string name="security_policy_subtitle">Votre confidentialitÃ© et votre sÃ©curitÃ© sont nos prioritÃ©s absolues. DÃ©couvrez comment nous protÃ©geons vos donnÃ©es.</string>
+    
+    <string name="about_title">Ã€ propos</string>
+    <string name="about_version">Version 2.4.0 (Build 2401)</string>
+    <string name="about_tagline">Stockage cloud rapide, sÃ©curisÃ© et fluide pour tous vos fichiers, photos et souvenirs.</string>
+    <string name="about_key_features">FonctionnalitÃ©s clÃ©s</string>
+    <string name="about_contact_us">Contactez-nous</string>
+    <string name="about_website">Site web</string>
+    <string name="about_support_email">E-mail de support</string>
+    <string name="about_legal">Mentions lÃ©gales</string>
+    <string name="about_terms_service">Conditions d\'utilisation</string>
+    <string name="about_privacy_policy">Politique de confidentialitÃ©</string>
+    
+    <string name="file_rename">Renommer</string>
+    <string name="file_move">DÃ©placer</string>
+    <string name="file_copy">Copier</string>
+    <string name="file_delete">Supprimer</string>
+    <string name="file_properties">PropriÃ©tÃ©s</string>
+    <string name="file_make_offline">Rendre disponible hors ligne</string>
+    <string name="file_remove_offline">Retirer du mode hors ligne</string>
+    
+    <string name="storage_space_management">Gestion de l\'espace</string>
+    <string name="storage_clean_up">Nettoyer</string>
+    <string name="storage_permanent">Permanent</string>
+    <string name="storage_time_limited">DurÃ©e limitÃ©e</string>
+    <string name="storage_gb">Go</string>
+    <string name="storage_mb">Mo</string>
+    <string name="storage_kb">Ko</string>
+    <string name="storage_bytes">octets</string>
+    
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="delete">Supprimer</string>
+    <string name="edit">Modifier</string>
+    <string name="done">TerminÃ©</string>
+    <string name="close">Fermer</string>
+    <string name="back">Retour</string>
+    <string name="next">Suivant</string>
+    <string name="previous">PrÃ©cÃ©dent</string>
+    <string name="loading">Chargement...</string>
+    <string name="error">Erreur</string>
+    <string name="retry">RÃ©essayer</string>
+    <string name="search">Rechercher</string>
+    <string name="menu">Menu</string>
+    
+    <string name="cd_menu">Menu</string>
+    <string name="cd_search">Rechercher</string>
+    <string name="cd_notifications">Notifications</string>
+    <string name="cd_back">Retour</string>
+    <string name="cd_close">Fermer</string>
+    <string name="cd_upload">TÃ©lÃ©verser</string>
+    <string name="cd_download">TÃ©lÃ©charger</string>
+    <string name="cd_share">Partager</string>
+    <string name="cd_delete">Supprimer</string>
+    <string name="cd_more_options">Plus d\'options</string>
+</resources>
