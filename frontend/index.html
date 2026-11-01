@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudStorage - Store & Access Anywhere</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <span>CloudStorage</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="dashboard">
+          <i class="fa-solid fa-house"></i>
+          <span>Home Dashboard</span>
+        </button>
+        <button class="nav-item" data-tab="files">
+          <i class="fa-solid fa-folder"></i>
+          <span>My Files</span>
+        </button>
+        <button class="nav-item" data-tab="shared">
+          <i class="fa-solid fa-user-group"></i>
+          <span>Shared Files</span>
+        </button>
+        <button class="nav-item" data-tab="starred">
+          <i class="fa-solid fa-star"></i>
+          <span>Starred</span>
+        </button>
+        <button class="nav-item" data-tab="trash">
+          <i class="fa-solid fa-trash-can"></i>
+          <span>Recycle Bin</span>
+        </button>
+      </nav>
+
+      <!-- Storage Quota Widget -->
+      <div class="storage-widget">
+        <div class="storage-info">
+          <div class="storage-text">
+            <span>Storage</span>
+            <span id="storage-percentage">17%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="storage-bar" style="width: 17%;"></div>
+          </div>
+          <p class="storage-details" id="storage-text-details">2.5 GB of 15 GB used</p>
+        </div>
+        <button class="btn btn-upgrade" id="btn-upgrade">
+          <i class="fa-solid fa-crown"></i> Upgrade Storage
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation Bar -->
+      <header class="topbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search files, photos, documents...">
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn btn-primary" id="btn-open-upload">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload File
+          </button>
+          <button class="icon-btn" id="btn-new-folder" title="New Folder">
+            <i class="fa-solid fa-folder-plus"></i>
+          </button>
+          <div class="user-profile">
+            <img src="https://ui-avatars.com/api/?name=User&background=3B82F6&color=fff" alt="User avatar" id="user-avatar">
+            <span class="user-name" id="user-name">Demo User</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content Views -->
+      <div class="content-body">
+        <!-- Dashboard Section -->
+        <section id="view-dashboard" class="view-panel active">
+          <div class="welcome-banner">
+            <div>
+              <h2>Welcome to CloudStorage</h2>
+              <p>Store, organize, and access all your documents, images, and videos securely.</p>
+            </div>
+            <div class="banner-badge">
+              <i class="fa-solid fa-shield-halved"></i> 256-bit Encrypted
+            </div>
+          </div>
+
+          <!-- Quick Categories -->
+          <h3 class="section-title">Categories</h3>
+          <div class="categories-grid">
+            <div class="category-card" data-category="images">
+              <div class="category-icon images"><i class="fa-solid fa-image"></i></div>
+              <h4>Images</h4>
+              <p id="cat-images-count">1 file</p>
+            </div>
+            <div class="category-card" data-category="documents">
+              <div class="category-icon documents"><i class="fa-solid fa-file-lines"></i></div>
+              <h4>Documents</h4>
+              <p id="cat-docs-count">1 file</p>
+            </div>
+            <div class="category-card" data-category="videos">
+              <div class="category-icon videos"><i class="fa-solid fa-video"></i></div>
+              <h4>Videos</h4>
+              <p id="cat-videos-count">1 file</p>
+            </div>
+            <div class="category-card" data-category="audio">
+              <div class="category-icon audio"><i class="fa-solid fa-music"></i></div>
+              <h4>Audio</h4>
+              <p id="cat-audio-count">0 files</p>
+            </div>
+          </div>
+
+          <!-- Recent Files -->
+          <div class="section-header">
+            <h3 class="section-title">Recent Files</h3>
+            <div class="view-toggles">
+              <button class="view-btn active" id="view-grid-btn"><i class="fa-solid fa-grip"></i></button>
+              <button class="view-btn" id="view-list-btn"><i class="fa-solid fa-list"></i></button>
+            </div>
+          </div>
+
+          <div class="files-container grid-view" id="files-list">
+            <!-- Dynamically populated files -->
+          </div>
+        </section>
+
+        <!-- Other Views (Shared, Starred, Trash) will re-render using files-list -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Upload Modal -->
+  <div class="modal" id="uploadModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Upload Files</h3>
+        <button class="close-btn" id="close-upload-modal">&times;</button>
+      </div>
+      <div class="dropzone" id="dropzone">
+        <i class="fa-solid fa-cloud-arrow-up drop-icon"></i>
+        <p>Drag and drop files here, or <span class="browse-link">browse</span></p>
+        <span class="subtext">Supports PNG, JPG, PDF, DOCX, MP4, MP3 up to 100MB</span>
+        <input type="file" id="fileInput" multiple style="display: none;">
+      </div>
+      <div class="selected-files-list" id="selected-files-list"></div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancel-upload">Cancel</button>
+        <button class="btn btn-primary" id="confirm-upload" disabled>Upload</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upgrade Modal -->
+  <div class="modal" id="upgradeModal">
+    <div class="modal-content pricing-modal">
+      <div class="modal-header">
+        <h3>Choose Your Storage Plan</h3>
+        <button class="close-btn" id="close-upgrade-modal">&times;</button>
+      </div>
+      <div class="pricing-cards">
+        <div class="price-card current">
+          <div class="plan-tag">Current Plan</div>
+          <h4>Basic</h4>
+          <div class="price">Free</div>
+          <p class="plan-storage">15 GB Cloud Storage</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> 15 GB Total Storage</li>
+            <li><i class="fa-solid fa-check"></i> Standard Sync Speed</li>
+            <li><i class="fa-solid fa-check"></i> Recycle Bin (30 days)</li>
+          </ul>
+          <button class="btn btn-secondary" disabled>Active</button>
+        </div>
+        <div class="price-card featured">
+          <div class="plan-tag featured-tag">Recommended</div>
+          <h4>Pro Cloud</h4>
+          <div class="price">$4.99 <span>/ month</span></div>
+          <p class="plan-storage">100 GB Cloud Storage</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> 100 GB High Speed Storage</li>
+            <li><i class="fa-solid fa-check"></i> Advanced File Sharing</li>
+            <li><i class="fa-solid fa-check"></i> 60-day File Recovery</li>
+            <li><i class="fa-solid fa-check"></i> Priority 24/7 Support</li>
+          </ul>
+          <button class="btn btn-primary">Upgrade Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
